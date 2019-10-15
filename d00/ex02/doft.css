@@ -1,7 +1,5 @@
 body {
 	background-color: #505050;
-	background-image: url(https://raw.githubusercontent.com/ffoissey/piscinePHP_42/master/D00/ex02/resources/doft.jpg);
-	background-repeat: no-repeat;
 	background-position: 0px -77px;
 }
 figure {
@@ -11,7 +9,6 @@ figure {
 div {
 	background-color: #909090;
 	box-shadow: 10px 10px 10px;
-	opacity: 0.9;
 }
 em {
 	font-style: bold;
@@ -31,7 +28,7 @@ em {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	padding-top: 8px;
+	padding-top: 9px;
 	padding-left: 10px;
 	padding-bottom: 14px;
 	border-radius: 11px;
@@ -114,6 +111,20 @@ em {
 	top: 125px;;
 	left: 1626px;
 }
+#clickable_chair {
+	position: absolute;
+	width: 54px;
+	height: 40px;
+	top: 520px;
+	right: 1050px;
+}
+#clickable_screen {
+	position: absolute;
+	width: 175px;
+	height: 95px;
+	top: 513px;
+	right: 470px;
+}
 #towel {
 	padding-top: 6px;
 }
@@ -136,6 +147,7 @@ em {
 	bottom: 107px;
 	left: 185px;
 	padding: 10px;
+	padding-bottom: 11px;
 }
 .description {
 	margin-top: 0px;
@@ -150,7 +162,7 @@ em {
 	font-size: 33px;
 }
 .ordinateurs {
-	text-shadow: #cc2e12 7px 5px 4px;
+	text-shadow: #CC2E12 7px 5px 4px;
 }
 .italic {
 	font-weight: 80;
@@ -181,7 +193,4 @@ input[type=button] {
 	color: black;
 	border-color: gray;
 	border: 1px solid gray;
-}
-input[type=button]:hover {
-	background-color: lightgrey;
 }
