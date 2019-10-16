@@ -32,9 +32,7 @@ $tmp = array("janvier" => "01", "février" => "02", "mars" => "03", "avril" => "
 $month[0] = strtolower($month[0]);
 $month = $tmp[$month];
 $timestamp = $year."-".$month."-".$nb;
-echo "$timestamp\n";
-$ret = date('w', strtotime($timestamp));
-echo "$ret\n";
+$ret = date('w', strtotime($timestamp)) - 1;
 $tmp = array("0" => "lundi", "1" => "mardi", "2" => "mercredi", "3" => "jeudi", "4" => "vendredi", "5" => "samedi", "6" => "dimanche");
 $day_verif = $tmp[$ret];
 $day[0] = strtolower($day[0]);
@@ -42,6 +40,5 @@ if ($day != $day_verif) {
 	echo "Wrong Format\n";
 	return ;
 }
-echo $hour, "\n",$min, "\n",$sec, "\n",$month, "\n",$nb, "\n",$year, "\n";
 echo mktime($hour, $min, $sec, $month, $nb, $year), "\n";
 ?>
