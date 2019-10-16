@@ -3,10 +3,10 @@
 if ($argc == 2) {
 	$tmp = trim($argv[1]);
 	$tab = preg_split("~[+-/%*]~", $tmp);
-
 	$nb1 = trim($tab[0]);
 	$nb2 = trim($tab[1]);
-	if (is_numeric($nb1) === false || is_numeric($nb2) === false)
+	if (is_numeric($nb1) === false || is_numeric($nb2) === false
+			|| count($tab) != 2)
 	{
 		echo "Syntax Error\n";
 		return ;
