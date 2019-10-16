@@ -2,6 +2,7 @@
 <?php
 if ($argc < 2)
 	return ;
+$ret = null;
 array_shift($argv);
 $key = array_shift($argv);
 foreach ($argv as $value) {
@@ -10,6 +11,6 @@ foreach ($argv as $value) {
 		$ret = $tab[1];
 	}
 }
-if (empty($ret) === false)
+if ($ret != null)
 	echo "$ret\n";
 ?>

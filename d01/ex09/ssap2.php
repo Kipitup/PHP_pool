@@ -6,7 +6,7 @@ $num = array();
 $not_alnum = array();
 for ($i = 1; $i < $argc; $i++) {
 	$str = trim($argv[$i]);
-	$tmp = preg_split("/[ ]+/", $str);
+	$tmp = preg_split("/[\s]+/", $str);
 	$tab = array_merge($tab, $tmp);
 }
 $count = count($tab);
