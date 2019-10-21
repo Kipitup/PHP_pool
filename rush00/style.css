@@ -1,0 +1,75 @@
+body {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+.myheader {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-basis: 20%;
+	background-color: grey;
+	margin-bottom: 20px;
+}
+.user_access {
+	padding-top: 10px;
+	padding-right: 10px;
+}
+.content {
+	display: flex;
+	flex-direction: column;
+	margin-left: 15vw;
+	margin-right: 15vw;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	flex-basis: 80%;
+	border: 1px solid black;
+	background-color: #FFFFFF;
+}
+.top {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.category {
+	flex-basis: 100%;
+	border: 1px solid black;
+}
+.dropdown {
+	flex-basis: 20%;
+	background-color: grey;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+.dropdown .dropbtn {
+	font-size: 2vw;
+	border: none;
+	color: #FFFFFF;
+	padding: 14px 0px 16px 0px;
+	background-color: inherit;
+}
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 20vw;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 14px 0px 16px 0px;
+	text-decoration: none;
+}
+
+.dropdown-content a:hover {
+	background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+	display: flex;
+	flex-direction: column;
+}
+.panier {
+	border-radius: 10px;
+}

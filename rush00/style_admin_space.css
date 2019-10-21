@@ -1,0 +1,46 @@
+body {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+a, h2 {
+	margin: 5px;
+}
+.myheader {
+	flex-basis: 20%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	background-color: grey;
+	margin-bottom: 20px;
+}
+h1 {
+	flex-basis: 80%;
+}
+.user_access {
+	flex-basis: 10%;
+	padding-top: 10px;
+	padding-right: 10px;
+}
+.content {
+	display: flex;
+	flex-direction: column;
+	margin-left: 15vw;
+	margin-right: 15vw;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	flex-basis: 80%;
+	border: 1px solid black;
+	background-color: #FFFFFF;
+}
+.top {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+.category {
+	flex-basis: 100%;
+	display: flex;
+	flex-direction: row;
+	border: 1px solid black;
+}
