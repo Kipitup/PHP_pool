@@ -1,7 +1,7 @@
 SELECT
     `last_name`,
     `first_name`,
-    DATE_FORMAT(`birthdate`, "%Y-%m-%e") AS `birthdate`
+    DATE_FORMAT(`birthdate`, "%Y-%m-%d") AS `birthdate`
 FROM
     `user_card`
 WHERE
